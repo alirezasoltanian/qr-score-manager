@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>QR Capture</title><link rel="stylesheet" href="/style.css"></head>
+<body><main class="shell">
+<header><div><p class="eyebrow">QR SCORE MANAGER</p><h1>دریافت QR با دوربین</h1><p class="muted">این صفحه را روی گوشی باز کن و دوربین را به سمت نمایشگر بگیر.</p></div><a href="/" class="button secondary">داشبورد</a></header>
+<section class="panel">
+<label>توکن مدیریتی <input id="token" type="password" autocomplete="current-password" placeholder="APP_TOKEN"></label>
+<div class="actions"><button id="start">شروع دوربین</button><button id="stop" class="secondary" disabled>توقف</button></div>
+<video id="video" playsinline muted></video>
+<p id="status" class="muted">برای شروع، توکن را وارد کن.</p>
+<div class="result"><span>آخرین QR شناسایی‌شده</span><code id="last">—</code></div>
+</section><footer>تصویر دوربین در خود گوشی پردازش می‌شود؛ فقط متن QR به سرور فرستاده می‌شود.</footer>
+</main><script src="/phone.js"></script></body></html>

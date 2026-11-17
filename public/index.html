@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>QR Score Manager</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+<main class="shell">
+  <header><div><p class="eyebrow">QR SCORE MANAGER · MVP</p><h1>مدیریت QR</h1><p class="muted">دریافت QR از گوشی و مشاهده رویدادها</p></div><span class="pill">نسخه آزمایشی</span></header>
+  <section class="stats"><article><span>کل QRهای ثبت‌شده</span><strong id="total">—</strong></article><article><span>امروز</span><strong id="today">—</strong></article></section>
+  <section class="panel">
+    <h2>اتصال و دسترسی</h2>
+    <label>توکن مدیریتی <input id="token" type="password" autocomplete="current-password" placeholder="APP_TOKEN"></label>
+    <div class="actions"><button id="connect">اتصال داشبورد</button><a class="button secondary" href="/phone.html">باز کردن صفحه دوربین گوشی</a></div>
+    <p id="status" class="muted">برای مشاهده اطلاعات، توکن را وارد کن.</p>
+  </section>
+  <section class="panel"><div class="section-head"><h2>آخرین QRها</h2><button class="secondary" id="refresh">بروزرسانی</button></div><div class="table-wrap"><table><thead><tr><th>شناسه</th><th>زمان مشاهده</th><th>انقضای تخمینی</th><th>محتوا</th></tr></thead><tbody id="events"><tr><td colspan="4" class="muted">هنوز داده‌ای دریافت نشده است.</td></tr></tbody></table></div></section>
+  <footer>این نسخه فقط QR را شناسایی و ثبت می‌کند؛ هیچ امتیاز یا ثبت‌نامی را خودکار ارسال نمی‌کند.</footer>
+</main><script src="/dashboard.js"></script>
+</body></html>

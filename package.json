@@ -1,0 +1,19 @@
+{
+  "name": "qr-score-manager",
+  "version": "0.1.0",
+  "private": true,
+  "description": "QR capture and event tracking MVP",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": { "node": ">=22" },
+  "dependencies": {
+    "better-sqlite3": "^12.4.1",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "ws": "^8.18.3"
+  }
+}
