@@ -10,5 +10,5 @@ services:
       TRUST_PROXY: "1"
     volumes:
       - ./data:/app/data
-    expose:
-      - "3000"
+    ports:
+      - "3030:3000"
